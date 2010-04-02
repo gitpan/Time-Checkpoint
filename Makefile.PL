@@ -1,20 +1,23 @@
-# $Header$
+#!/usr/bin/perl
 
+use warnings;
+use strict;
 use ExtUtils::MakeMaker;
-use Time::HiRes;
 
 WriteMakefile(
-    'NAME'      => 'Time::Checkpoint',
-    'PREREQ_PM'     => { 
+    'NAME'          => 'Time::Checkpoint',
+    'VERSION'       => '0.3',
+    'PREREQ_PM'     => {
         'Carp'             => 0,
         'Params::Validate' => 0,
         'Test::More'       => 0,
+        'Time::HiRes'      => 0, # some *very* fast machines have sub-one-second checkpoints
     },
-    'dist' => { 
+    'dist' => {
         'COMPRESS' => 'gzip -9f',
-        'SUFFIX' => 'gz',
+        'SUFFIX'   => 'gz',
     },
-    'AUTHOR' => 'Alex Avriette (alex@posixnap.net)',
-    'ABSTRACT' => 'Time-based checkpoints / deltas',
+    'AUTHOR'   => 'Alex Avriette (alex@cpan.org)',
+    'ABSTRACT' => 'Time-based checkpoints and deltas for performance analysis',
 );
 

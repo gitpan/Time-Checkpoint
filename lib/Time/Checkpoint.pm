@@ -7,8 +7,6 @@ use Time::HiRes      qw{ time };
 use Params::Validate qw{ :all };
 use Carp          qw{ confess };
 
-our $VERSION = [ qw{ $Revision: 1.1 $ } ]->[1];
-
 use constant IDX_CALLBACK => 0;
 use constant IDX_CKPOINTS => 1;
 
@@ -233,11 +231,12 @@ Removes all checkpoints.
 =head1 AUTHOR
 
   Alex J. Avriette
-  (alex@posixnap.net)
+  (alex@cpan.org)
 
 =head1 BUGS
 
-Yep.
+Fewer these days, but beasties abound. Because that's what
+beasties do.
 
 =cut
 

@@ -1,0 +1,17 @@
+--- #YAML:1.0
+name:                Time-Checkpoint
+version:             0.3
+abstract:            Time-based checkpoints and deltas for performance analysis
+license:             ~
+author:              
+    - Alex Avriette (alex@cpan.org)
+generated_by:        ExtUtils::MakeMaker version 6.42
+distribution_type:   module
+requires:     
+    Carp:                          0
+    Params::Validate:              0
+    Test::More:                    0
+    Time::HiRes:                   0
+meta-spec:
+    url:     http://module-build.sourceforge.net/META-spec-v1.3.html
+    version: 1.3
