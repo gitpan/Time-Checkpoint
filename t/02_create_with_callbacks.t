@@ -1,10 +1,6 @@
 use Test::More qw{ no_plan };
 
 use_ok( 'Time::Checkpoint' );
-use_ok( 'Time::HiRes' );
-
-use warnings;
-use strict;
 
 our $first = 1;
 
@@ -16,9 +12,7 @@ sub a_sub {
 		ok( defined $ot, "time has value" );
 	}
 	ok( defined $nt, "new timestamp has value" );
-	if (not $first) {
-		ok( $nt > $ot, "new timestamp came from the future" );
-	} # on your first runthrough, your $ot is undef.
+	if (not $first) { ok( $nt > $ot, "new timestamp came from the future" ) }
 }
 
 my $t = Time::Checkpoint->new( callback => \&a_sub );
