@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               Time-Checkpoint
-version:            0.1
+version:            0.35
 abstract:           Time-based checkpoints / deltas
 author:
     - Alex Avriette (alex@cpan.org)
