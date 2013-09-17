@@ -1,24 +1,23 @@
---- #YAML:1.0
-name:               Time-Checkpoint
-version:            0.35
-abstract:           Time-based checkpoints / deltas
+---
+abstract: 'Time-based checkpoints / deltas'
 author:
-    - Alex Avriette (alex@cpan.org)
-license:            unknown
-distribution_type:  module
-configure_requires:
-    ExtUtils::MakeMaker:  0
+  - 'Jane A. Avriette (jane@cpan.org)'
 build_requires:
-    ExtUtils::MakeMaker:  0
-requires:
-    common::sense:     0
-    Params::Validate:  0
-    Test::More:        0
-no_index:
-    directory:
-        - t
-        - inc
-generated_by:       ExtUtils::MakeMaker version 6.56
+  ExtUtils::MakeMaker: 0
+configure_requires:
+  ExtUtils::MakeMaker: 0
+dynamic_config: 1
+generated_by: 'ExtUtils::MakeMaker version 6.68, CPAN::Meta::Converter version 2.112621'
+license: unknown
 meta-spec:
-    url:      http://module-build.sourceforge.net/META-spec-v1.4.html
-    version:  1.4
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: Time-Checkpoint
+no_index:
+  directory:
+    - t
+    - inc
+requires:
+  Params::Validate: 0
+  Test::More: 0
+version: 0.36
